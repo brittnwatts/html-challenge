@@ -6,67 +6,74 @@ This ReadMe serves to:
    3. Clarify the reason for the assignment,
 
 1. 
+
 My name is Brittney Watts, and I am in the UNCC/EdX Data Analytics Bootcamp. Currently, we 
 are working on Module 9 of our exploration into BeautifulSoup, HTML, and Splinter.
 
+
+
 2. 
+
 The source code is my interpretation of the information we have learned in class with some debugging help from forums, and here
 is a breakdown of the locations of each element of my assignment:
 
-   sql-challenge
-      EmployeeSQL
-         Resources
-            departments.csv
-            dept_emp.csv
-            dept_manager.csv
-            employees.csv
-            salaries.csv
-            titles.csv
-         Code
-         employees_queries.sql
-         employees_schema.sql
-         README.md
+   html-challenge
+      mars_facts
+          part_1_mars_news.ipynb
+          part_2_mars_weather.ipynb
+      Resources
+          articles.json
+          weather_data.csv
+      README.md
+
+
 
 3. 
-This assignment serves to track my understanding of the SQL language, data modeling, and data manipulation.
 
-Employee SQL Challenge:
-   My task was to read the data from the csv files and perform queries on the datasets. 
-   The CSV files were all files with important information about the employees for company "Pewlard Hackett". 
+This assignment serves to track my understanding of HTML, Web Scraping, BeautifulSoup.
+
+Mars Facts(2 deliverables):
+
+   This challenged me to extract data from websites and perform different tasks like organizing, storing, analyzing, and visually communicating the data. 
+   The first website for deliverable 1 was a website with a list of articles. The second website for deliverable 2 contained a table with data like temperature, months, and atmospheric pressure.
    
-   My Steps: 
-      - First, I had to create an ERD with the csv information I was given. I made sure that I was specifying the correct data types, PKs, and FKs. I also had to create two composite keys for two of the files because they had no primary key columns with unique values. 
+   My Steps:
+       
+       Deliverable 1:
 
-
-      - Import the CSV files into their respective SQL tables.
+          - Create the BeautifulSoup object and extract elements from the website (article titles and previews)
       
 
-      - Once I had all the files imported, I had to perform a data analysis.
+          - Store each title and preview pair in a python dictionary with corresponding keys and print it into the notebook.
 
 
-      - List the employee number, last name, first name, sex, and salary of each employee.
+          - Store all of this data into a JSON File!
+          
+          
+          
+       Deliverable 2:
 
 
-      - List the first name, last name, and hire date for the employees who were hired in 1986.
+          - create a BeautifulSoup object and use it to scrape the data from the HTMl table.
+          
+
+          - Assemble the scraped data into a Pandas DataFrame with the same headings.
 
 
-      - List the manager of each department along with their department number, department name, employee number, last name, and first name.
+          - Convert the data types from the table if necessary.
 
 
-      - List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+          - Analyse the dataset and answer the following questions:
+              1. How many months exist on mars?
+              2. How many martial days worth of data are in the dataset
+              3. What are the coldest and warmest months on Mars?
+              4. Which months are the hottest and coldest on Mars?
+              5. Which months have the lowest and highest atmospheric pressure?
+              How many terrestrial days exist in a single martian year?
 
 
-      - List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+          - Export the data to a csv file!
 
 
-      - List each employee in the Sales department, including their employee number, last name, and first name.
-
-
-      - List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-
-      - List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
-
-      
 THANK YOU!!!!!
 
